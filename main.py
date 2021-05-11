@@ -1,11 +1,13 @@
-from indeed import get_job as get_indeed_job
-from indeed import get_page_number as get_indeed_page_num
-from stackoverflow import get_job as get_stackoverflow_job
-from stackoverflow import get_page_number as get_stackoverflow_page_num
-from misc import print_align_space
-from time import sleep
 import csv
 from sys import exit
+from time import sleep
+
+from misc import print_align_space
+from scrapper.indeed import get_job as get_indeed_job
+from scrapper.indeed import get_page_number as get_indeed_page_num
+from scrapper.stackoverflow import get_job as get_stackoverflow_job
+from scrapper.stackoverflow import \
+    get_page_number as get_stackoverflow_page_num
 
 HEAD = ["홈페이지", "타이틀", "링크"]
 CSV = 'data.csv'
